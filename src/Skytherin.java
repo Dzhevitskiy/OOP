@@ -41,6 +41,7 @@ public class Skytherin extends Hogwarts {
         return lustForPower;
     }
 
+
     @Override
     public String toString() {
         return "Skytherin:" + super.toString() +

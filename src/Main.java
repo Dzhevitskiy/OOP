@@ -41,6 +41,7 @@ public class Main {
         compareGryffindor(Potter,Weasley);
         compareGryffindor(Granger,Potter);
         compareHufflepuff(Diggory,Smith);
+        compareHogwarts(Weasley,FintFletchley);
     }
     public static void compareGryffindor(Gryffindor Granger, Gryffindor Weasley) {
         var s1 = Granger.abilyty();
@@ -58,6 +59,15 @@ public class Main {
             System.out.println(Smith.getName() + " лучший Пуффендуец, чем " + Diggory.getName());
         } else {
             System.out.println(Diggory.getName() + " лучший Пуффендуец, чем " + Smith.getName());
+        }
+    }
+    public static void compareHogwarts(Gryffindor Weasley, Hufflepuff FintFletchley) {
+        var s1 = Weasley.abilyty();
+        var s2 = FintFletchley.abilyty();
+        if (s1 > s2) {
+            System.out.println(Weasley.getName() + " обладает большей магией, чем " + FintFletchley.getName());
+        } else {
+            System.out.println(FintFletchley.getName() + " обладает большей магией, чем " + Weasley.getName());
         }
     }
 }

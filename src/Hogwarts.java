@@ -21,6 +21,10 @@ public class Hogwarts {
     public int getTransgression() {
         return transgression;
     }
+    
+    public int ability() {
+        return magic + transgression;
+    }
 
     @Override
     public String toString() {
